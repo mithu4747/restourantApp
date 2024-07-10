@@ -1,0 +1,22 @@
+[
+   
+    {
+        "id": 1,
+        "name": "Fried Rice",
+        "image":"veg/Vegetable-Fried-Rice-2-3.jpg",
+        "price": "Rs. 150.00"
+    },
+    {
+        "id": 2,
+        "name": "Veg Salad",
+        "image":"veg/images2.jpg",
+        "price":"Rs. 100.00"
+    },
+    {
+        "id": 4,
+        "name": "",
+        "image":"veg/Vegetable-curry-16.jpg",
+        "price":"Rs. 150.00"
+    }
+ 
+]

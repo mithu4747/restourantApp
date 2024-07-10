@@ -1,0 +1,61 @@
+.container .item{
+    
+    height: 250px;
+    width: 160px;
+    margin: 30px;
+    background-color:rgba(0, 0, 0, 0.848);
+    border-top-right-radius: 100px;
+    border-top-left-radius: 100px;
+    border:  2px solid #CDA45E;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .item img{
+   
+    background-color: #efefef;
+    border-radius: 50%;
+    object-fit: cover;
+    padding: 5px;
+    height: 80px;
+    width: 80px;
+
+}
+.container .item img:hover{
+    transform: scale(1.3);
+    z-index: 2;
+}
+    
+.container .item h2{
+    color: #e1c189;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+    padding-top: 15px;
+}
+.container .item .price{
+    color: white;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 10px;
+}
+.container .item .add-buy{
+    padding: 3px 10px;
+    margin: 10px;
+    border: 2px solid #CDA45E;
+    outline: 0;
+    background-color: transparent;
+    color: #CDA45E;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: 0.3s ease-in;
+    cursor: pointer;
+}
+.container .item .add-buy:hover{
+    color:#e7e7e7;
+    background-color: #CDA45E;
+}

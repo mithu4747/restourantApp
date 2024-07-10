@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <div class="container">
+        <div class="food-box">
+            <img class="food-img" src="./veg/Vegetable-Fried-Rice-2-3.jpg">
+            <h2 class="food-title">Fried Rice</h2>
+            <h3 class="food-price">Rs.150.00</h3>
+            <button class="add-buy">
+                Buy Now
+            </button>
+
+        </div>
+        <div class="food-box">
+            <img class="food-img" src="./veg/images2.jpg">
+            <h2 class="food-title">Veg Salad</h2>
+            <h3 class="food-price">Rs.100.00</h3>
+            <button class="add-buy">
+                Buy Now
+            </button>
+
+        </div>
+        <div class="food-box">
+            <img class="food-img" src="./veg/img3.png">
+            <h2 class="food-title">Paneer Masala </h2>
+            <h3 class="food-price">Rs.180.00</h3>
+            <button class="add-buy">
+                Buy Now
+            </button>
+
+        </div>
+        <div class="food-box">
+            <img class="food-img" src="./veg/veg4.jpg">
+            <h2 class="food-title">veg Pasta</h2>
+            <h3 class="food-price">Rs.130.00</h3>
+            <button class="add-buy">
+                Buy Now
+            </button>
+
+        </div>
+        <div class="food-box">
+            <img class="food-img" src="./veg/img5.png">
+            <h2 class="food-title">Fruit Salad</h2>
+            <h3 class="food-price">Rs.110.00</h3>
+            <button class="add-buy">
+                Buy Now
+            </button>
+
+        </div>
+        <div class="food-box">
+            <img class="food-img" src="./veg/images6.jpg">
+            <h2 class="food-title">Potato Salad  </h2>
+            <h3 class="food-price">Rs.120.00</h3>
+            <button class="add-buy">
+                Buy Now
+            </button>
+
+        </div>
+        <div class="food-box">
+            <img class="food-img" src="./veg/images7.jpg">
+            <h2 class="food-title">Mushroom </h2>
+            <h3 class="food-price">Rs.160.00</h3>
+            <button class="add-buy">
+                Buy Now
+            </button>
+
+        </div>
+        <div class="food-box">
+            <img class="food-img" src="./veg/img8.png">
+            <h2 class="food-title">Veg Samosa</h2>
+            <h3 class="food-price">Rs.50.00</h3>
+            <button class="add-buy">
+                Buy Now
+            </button>
+
+        </div>
+        <div class="food-box">
+            <img class="food-img" src="./veg/images9.jpg">
+            <h2 class="food-title">Kerala Kanji</h2>
+            <h3 class="food-price">Rs.80.00</h3>
+            <button class="add-buy">
+                Buy Now
+            </button>
+
+        </div>
+        <div class="food-box">
+            <img class="food-img" src="./veg/img10.jpg">
+            <h2 class="food-title">Idlli Sambar</h2>
+            <h3 class="food-price">Rs.110.00</h3>
+            <button class="add-buy">
+                Buy Now
+            </button>
+
+        </div>
+        <div class="food-box">
+            <img class="food-img" src="./veg/img11.jpg">
+            <h2 class="food-title">Appam</h2>
+            <h3 class="food-price">Rs.50.00</h3>
+            <button class="add-buy">
+                Buy Now
+            </button>
+
+        </div>
+        <div class="food-box">
+            <img class="food-img" src="./veg/img12.0.jpg">
+            <h2 class="food-title">Kerala Meals</h2>
+            <h3 class="food-price">Rs.150.00</h3>
+            <button class="add-buy">
+                Buy Now
+            </button>
+
+        </div>
+        <div class="food-box">
+            <img class="food-img" src="./veg/img13.jpg">
+            <h2 class="food-title">Paneer Curry</h2>
+            <h3 class="food-price">Rs.190.00</h3>
+            <button class="add-buy">
+                Buy Now
+            </button>
+
+        </div>
+        <div class="food-box">
+            <img class="food-img" src="./veg/images14.jpg">
+            <h2 class="food-title">Kadala Curry</h2>
+            <h3 class="food-price">Rs.130.00</h3>
+            <button class="add-buy">
+                Buy Now
+            </button>
+
+        </div>
+        <div class="food-box">
+            <img class="food-img" src="./veg/images cauliflowe curry15.jpg">
+            <h2 class="food-title">Paneer Butter</h2>
+            <h3 class="food-price">Rs.90.00</h3>
+            <button class="add-buy">
+                Buy Now
+            </button>
+
+        </div>
+        <div class="food-box">
+            <img class="food-img" src="./veg/Vegetable-curry-16.jpg">
+            <h2 class="food-title">Beans Salad</h2>
+            <h3 class="food-price">Rs.120.00</h3>
+            <button class="add-buy">
+                Buy Now
+            </button>
+
+        </div>
+        <div class="food-box">
+            <img class="food-img" src="./veg/images17.jpg">
+            <h2 class="food-title">Veg Biriyani</h2>
+            <h3 class="food-price">Rs.200.00</h3>
+            <button class="add-buy">
+                Buy Now
+            </button>
+
+        </div>
+   </div>
+   <script>
+    let listProducts = [];
+
+const addDataToHTML =() => {
+    Container.innerHTML = '';
+    if(listProducts.length>0){
+        listProducts.forEach(product =>{
+            let newProduct = document.createElement('div');
+            newProduct.classList.add('item');
+            newProduct.innerHTML = `<img src="${product.image}" alt="">
+        <h2>"${product.name}"</h2>
+        <div class="price">"${product.price}"</div>
+        <button class="add-buy">Add to Cart</button>`;
+        Container.appendChild(newProduct);
+        })
+    }
+}
+
+const initApp = () => {
+    //get dta from json
+    fetch('products.json')
+    .then(response => response.json())
+    .then(data => {
+        listProducts = data;
+        //console.log(listProducts);
+        addDataToHTML();
+    })
+}
+initApp();
+
+
+
+
+
+
+
+
+    
+listCartHTML.addEventListener('click', (event)=>{
+    let positionClick = event.target;
+    if(positionClick.classList.contains('minus') || positionClick.classList.contains('plus')){
+        let product_id = positionClick.parentElement.parentElement.dataset.id;
+        let change = 'minus';
+        if(positionClick.classList.contains('plus')){
+            change ='plus'
+        }
+        changeQuantity(product_id , change)
+    }
+})
+const changeQuantity = (product_id, change) =>{
+  let positionItemInCart = carts.findIndex((value)=> value.product_id == product_id);
+  if(positionItemInCart>=0){
+    switch(change){
+        case 'change':
+            carts[positionItemInCart].quantity = carts[positionItemInCart].quantity + 1;
+            break;
+            default:
+                let valueChange =  carts[positionItemInCart].quantity - 1;
+                if(valueChange > 0){
+                    carts[positionItemInCart].quantity = valueChange;
+                }else{
+                    carts.splice(positionItemInCart, 1)
+                }
+                break;
+    }
+  }
+  addCartToMemory();
+  addCartToHTML();
+}
+   </script>
+</body>
+</html>
